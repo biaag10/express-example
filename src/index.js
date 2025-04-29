@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import db from './database/configdb.js';
-import User from './models/User.js';
+import User from './models/User.js'; // cria a collection de users
 
 dotenv.config();
 db.connect();
