@@ -5,6 +5,7 @@
   "main": "api/index.js",
   "type": "module",
   "scripts": {
+    "start": "node api/index.js", 
     "start:app": "nodemon api/index.js",
     "start:database": "docker compose up -d",
     "stop:database": "docker compose down"
