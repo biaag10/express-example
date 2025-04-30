@@ -1,4 +1,5 @@
-# express-backend-mongodb
+# backend-express-mongodb
+# Atividade Avaliativa IV.v2: Backend em Express com Autenticação (JWT) e MongoDB em produção
 
 # Mongo 
 https://hub.docker.com/_/mongo
