@@ -1,6 +1,9 @@
 # backend-express-mongodb
 # Atividade Avaliativa IV.v2: Backend em Express com Autenticação (JWT) e MongoDB em produção
 
+# Link do Vídeo Demonstrativo
+https://drive.google.com/file/d/1zgrg6LRPGOh-RQm5E5RYl91HAYYHFncr/view?usp=sharing
+
 # Mongo 
 https://hub.docker.com/_/mongo
 
@@ -15,9 +18,24 @@ curl --request POST \
   --url https://express-backend-mongodb.vercel.app/users/register \
   --header 'Content-Type: application/json' \
   --data '{
-    "username": "username-example",
-    "password": "password-example"
+    "name": "Cassia",
+    "username": "Cassia12",
+    "email": "cassia@gmail.com",
+    "password": "Cassia@123"
   }'
+
+curl --request POST \
+  --url https://express-backend-mongodb.vercel.app/users/login \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "email": "cassia@gmail.com",
+    "password": "Cassia@123"
+  }'
+
+curl --request GET \
+  --url 'https://express-backend-mongodb.vercel.app/secure/protected' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODEzZTU0M2JiYTY1MTE0OTUwZTY4NDciLCJpYXQiOjE3NDYxMzQ3NzYsImV4cCI6MTc0NjEzODM3Nn0.Cmv3hB0ge9YvtABTDbjdILeDtkVcSIlBlKOZpe5LIbU' 
+
 
 # JSON Web Tokens
 https://www.npmjs.com/package/jsonwebtoken

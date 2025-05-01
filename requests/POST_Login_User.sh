@@ -1,9 +1,11 @@
+# source ./requests/POST_Login_User.sh
+
 # login bem-sucedido (com username)
 # curl --request POST \
 #   --url 'http://localhost:3000/users/login' \
 #   --header 'Content-Type: application/json' \
 #   --data '{
-#     "username": "newuserUsername2",
+#     "username": "elena123",
 #     "password": "Senha@123"
 #     }'
 
@@ -35,10 +37,10 @@
 #     }'
 
 # requisição mal formatada {"message":"Nome de usuário e senha são obrigatórios. Ou Email e senha são obrigatórios!"}
-curl --request POST \
-  --url 'http://localhost:3000/users/login' \
-  --header 'Content-Type: application/json' \
-  --data '{
-    "password": "Senha@123"
-    }'
+# curl --request POST \
+#   --url 'http://localhost:3000/users/login' \
+#   --header 'Content-Type: application/json' \
+#   --data '{
+#     "password": "Senha@123"
+#     }'
 
