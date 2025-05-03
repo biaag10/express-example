@@ -1,4 +1,4 @@
-import UserService from '../service/user.service.js';
+import UserService from '../services/user.service.js';
 
 // Função de registro
 const register = async (req, res) => {
