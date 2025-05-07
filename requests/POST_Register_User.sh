@@ -1,15 +1,15 @@
 # source ./requests/POST_Register_User.sh
 
 # registro bem-sucedido 
-# curl --request POST \
-#   --url 'http://localhost:3000/users/register' \
-#   --header 'Content-Type: application/json' \
-#   --data '{
-#     "name": "Evilasio",
-#     "username": "Evilasio123",
-#     "email": "Evilasio123@example.com",
-#     "password": "Senha@123"
-#   }'
+curl --request POST \
+  --url 'http://localhost:3000/users/register' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "name": "Bianca Andrade Galvão",
+    "username": "Bianca123",
+    "email": "biancandradegalvao@gmail.com",
+    "password": "Bianca@123"
+  }'
 
 # e-mail repetido
 # curl --request POST \

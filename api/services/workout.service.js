@@ -1,10 +1,11 @@
 import Workout from "../models/Workout.js";
 
-const createWorkout = async (userId, title, exercises) => {
+const createWorkout = async (userId, title, exercises, createdAt) => {
     return Workout.create({
         userId,
         title,
-        exercises
+        exercises,
+        createdAt,
     });
 }
 

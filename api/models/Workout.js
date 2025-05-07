@@ -29,7 +29,11 @@ const workoutSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    exercises: [exerciseSchema],
+    exercises: {
+        type: [exerciseSchema],
+        required: true,
+        validate: [arr => arr.length > 0, 'Pelo menos um exercício é obrigatório']
+    },
     createdAt: {
         type: Date,
         default: Date.now,
