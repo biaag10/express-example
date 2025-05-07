@@ -13,7 +13,7 @@ const verifyToken = (req, res, next) => {
                 return res.status(403).json({ message: 'Token inválido' });
             }
             // armazena as informações do usuário decodificadas no objeto req para uso posterior
-            req.userId = decoded.id;
+            req.userId = decoded.userId;
             next(); // chama o próximo middleware ou rota
         });
     } catch (error) {

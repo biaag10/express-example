@@ -4,6 +4,7 @@ import db from './database/configdb.js';
 import userRoutes from './routes/user.route.js'; // importa as rotas de usuário
 import User from './models/User.js'; // cria a collection de users
 import exampleRoute from './routes/protected.route.js'; 
+import workoutRoute from './routes/workout.route.js'; // importa as rotas de treino
 
 dotenv.config();
 db.connect();
@@ -13,6 +14,7 @@ app.use(express.json()); // para aceitar JSON no corpo das requisições
 
 app.use("/users", userRoutes); // define o prefixo para as rotas de usuário
 app.use("/secure", exampleRoute); // define o prefixo para as rotas de exemplo
+app.use("/workouts", workoutRoute); // define o prefixo para as rotas de treino
 
 app.get('/', (req, res) => {
   res.send({message: 'API is running...'});
