@@ -5,3 +5,6 @@ curl -X GET http://localhost:3000/workouts/all-workouts \
 
 
 
+Invoke-WebRequest -Uri http://localhost:3000/workouts/all-workouts `
+  -Method GET `
+  -WebSession $session

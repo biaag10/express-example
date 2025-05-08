@@ -17,23 +17,37 @@ const register = async (req, res) => {
     }
 };
 
-// Função de login
+// função de login
 // loga com email ou username
 const login = async (req, res) => {
     const { username, email, password } = req.body;
 
-    // Verifica se pelo menos um par (username e password) ou (email e password) foi fornecido
     if ((!email && !username) || !password) {
         return res.status(400).json({ message: 'Nome de usuário e senha são obrigatórios. Ou Email e senha são obrigatórios!' });
     }
 
     try {
         const token = await UserService.login(username || email, password);
-        return res.status(200).json({ message: 'Login bem-sucedido', token });
+
+        // salvar o token em cookie HTTPOnly
+        res.cookie('token', token, {
+            httpOnly: true,
+            secure: false, // true em produção com HTTPS
+            sameSite: 'strict',
+            maxAge: 3600000 // 1 hora
+        });
+
+        return res.status(200).json({ message: 'Login bem-sucedido' }); // <-- token não é retornado
     } catch (error) {
         console.error('Erro no login:', error);
         return res.status(401).json({ message: error.message });
     }
 };
 
-export default { register, login };
+
+const logout = async (req, res) => {
+    res.clearCookie('token');
+    return res.status(200).json({ message: 'Logout realizado com sucesso' });
+}
+
+export default { register, login, logout };
