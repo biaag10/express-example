@@ -1,5 +1,5 @@
 # backend-express-mongodb
-# Atividade Avaliativa IV.v2: Backend em Express com Autenticação (JWT) e MongoDB em produção
+# Atividade Avaliativa IV.v2.1.0: crie uma feature para seu projeto individual (CRUD autenticado)
 
 # Link do Vídeo Demonstrativo
 https://drive.google.com/file/d/1z9NrHIxlR5ypd8eHcYbgSACFNS4B_Jcw/view?usp=sharing
