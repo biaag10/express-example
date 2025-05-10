@@ -1,13 +1,13 @@
 # source ./requests/POST_Login_User.sh
 
 # login bem-sucedido (com username)
-# curl --request POST \
-#   --url 'http://localhost:3000/users/login' \
-#   --header 'Content-Type: application/json' \
-#   --data '{
-#     "username": "elena123",
-#     "password": "Senha@123"
-#     }'
+curl --request POST \
+  --url 'https://express-backend-mongodb-cug4k8kck-bianca-ags-projects.vercel.app/users/login' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "username": "Bianca123",
+    "password": "Bianca@123"
+    }'
 
 # login bem-sucedido (com email)
 # curl --request POST \
@@ -44,3 +44,10 @@
 #     "password": "Senha@123"
 #     }'
 
+# curl --request POST \
+#   --url 'http://localhost:3000/users/login' \
+#   --header 'Content-Type: application/json' \
+#   --data '{
+#     "username": "elenasep",
+#     "password": "Elena@123"
+#     }'

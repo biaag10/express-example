@@ -43,3 +43,7 @@ https://www.npmjs.com/package/jsonwebtoken
 
 # Request
 - exemplo de comando: "source ./requests/POST_Register_User.sh"
+
+📌 Nova Funcionalidade: Registro de Treinos
+
+- Esta funcionalidade permite que usuários autenticados criem, visualizem, atualizem e excluam registros de treinos pessoais. Cada treino possui um título (ex: "Treino de Peito"), uma lista de exercícios, e para cada exercício, múltiplas séries com número de repetições e peso utilizado. As rotas são protegidas por autenticação JWT e garantem que cada usuário só possa acessar seus próprios dados. 
