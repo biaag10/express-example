@@ -2,7 +2,7 @@
 
 # login bem-sucedido (com username)
 curl --request POST \
-  --url 'http://localhost:3000/users/login' \
+  --url 'https://express-backend-mongodb-cug4k8kck-bianca-ags-projects.vercel.app/users/login' \
   --header 'Content-Type: application/json' \
   --data '{
     "username": "Bianca123",
