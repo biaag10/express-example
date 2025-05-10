@@ -1,13 +1,13 @@
 # source ./requests/POST_Login_User.sh
 
 # login bem-sucedido (com username)
-# curl --request POST \
-#   --url 'http://localhost:3000/users/login' \
-#   --header 'Content-Type: application/json' \
-#   --data '{
-#     "username": "Bianca123",
-#     "password": "Bianca@123"
-#     }'
+curl --request POST \
+  --url 'http://localhost:3000/users/login' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "username": "Bianca123",
+    "password": "Bianca@123"
+    }'
 
 # login bem-sucedido (com email)
 # curl --request POST \
