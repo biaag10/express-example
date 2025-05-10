@@ -1,3 +1,3 @@
 # source ./requests/workout/DELETE_Workout.sh
-curl -X DELETE http://localhost:3000/workouts/delete/681aca0275d031ecc1288335 \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODEzZTM3YTY1YmUxOTdkODA3NGZhY2MiLCJpYXQiOjE3NDY1ODU2MzMsImV4cCI6MTc0NjU4OTIzM30.w0gEdXg6-VqxGIlpaprdQrzdErUADmpAYVbVv8MhT90" \
+curl -X DELETE http://localhost:3000/workouts/delete/681f9ce54cb6c75a44838d89 \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2ODFiYTY3N2Y0MmY0YWVkOWQ0ZTUxYjEiLCJpYXQiOjE3NDY5MDIyMDksImV4cCI6MTc0NjkwNTgwOX0.eFZHQpT0XhYO_KWuUNZ2NhRtHQZOyywueapLJvoV54o" \

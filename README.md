@@ -2,7 +2,7 @@
 # Atividade Avaliativa IV.v2: Backend em Express com Autenticação (JWT) e MongoDB em produção
 
 # Link do Vídeo Demonstrativo
-https://drive.google.com/file/d/1zgrg6LRPGOh-RQm5E5RYl91HAYYHFncr/view?usp=sharing
+https://drive.google.com/file/d/1z9NrHIxlR5ypd8eHcYbgSACFNS4B_Jcw/view?usp=sharing
 
 # Mongo 
 https://hub.docker.com/_/mongo
