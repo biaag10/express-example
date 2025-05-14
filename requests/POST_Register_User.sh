@@ -5,10 +5,10 @@ curl --request POST \
   --url 'http://localhost:3000/users/register' \
   --header 'Content-Type: application/json' \
   --data '{
-    "name": "Bianca Andrade Galvão",
-    "username": "Bianca123",
-    "email": "biancandradegalvao@gmail.com",
-    "password": "Bianca@123"
+    "name": "Pedro Lima",
+    "username": "Pedrinho",
+    "email": "pepeu@gmail.com",
+    "password": "Pedro@123"
   }'
 
 # e-mail repetido
