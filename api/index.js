@@ -14,7 +14,7 @@ const app = express();
 
 // Configuração do CORS
 app.use(cors({
-  origin: 'http://localhost:3001',  // permite requisições do frontend na porta 3001
+  origin: 'https://frontend-workout-tracker.vercel.app',  // permite requisições do frontend na porta 3001
   methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],  // métodos permitidos
   allowedHeaders: ['Content-Type', 'Authorization'],  // cabeçalhos permitidos
 }));
